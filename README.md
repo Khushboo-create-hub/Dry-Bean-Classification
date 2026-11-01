@@ -4,7 +4,7 @@
 
 This project is part of the Machine Learning Assignment.
 
-The objective is to implement and compare five machine learning classification algorithmsnusing the UCI Dry Bean dataset.
+The objective is to implement and compare five machine learning classification algorithms using the UCI Dry Bean dataset.
 
 ## Dataset
 
