@@ -34,6 +34,22 @@ Classification type: Multiclass (7 classes)
 
 Dataset inspection and preprocessing completed.
 
-Model implementation and evaluation is in progress.
+## Performance Observations
+
+1. Logistic Regression
+
+Achieved 91.92% accuracy and 99.34% AUC.
+Demonstrated strong overall classification performance.
+Classified the BOMBAY class perfectly.
+Some confusion was observed between DERMASON and SIRA.
+
+2. Decision Tree
+
+Achieved 89.66% accuracy and 93.63% AUC.
+Classified the BOMBAY class perfectly.
+Demonstrated good performance for HOROZ and SEKER.
+Had difficulty distinguishing between DERMASON and SIRA.
+
+
 
 
