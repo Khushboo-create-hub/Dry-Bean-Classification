@@ -34,4 +34,6 @@ Classification type: Multiclass (7 classes)
 
 Dataset inspection and preprocessing completed.
 
-Model implementation and evaluation in progress.
+Model implementation and evaluation is in progress.
+
+
