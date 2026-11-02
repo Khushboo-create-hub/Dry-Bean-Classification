@@ -50,6 +50,12 @@ Classified the BOMBAY class perfectly.
 Demonstrated good performance for HOROZ and SEKER.
 Had difficulty distinguishing between DERMASON and SIRA.
 
+3. KNN Model
+
+Achieved 91.55% accuracy and 98.11% AUC.
+Demonstrated strong classification performance, particularly for BOMBAY, HOROZ and SEKER. 
+Some confusion was observed between DERMASON and SIRA.
+
 
 
 
