@@ -56,6 +56,18 @@ Achieved 91.55% accuracy and 98.11% AUC.
 Demonstrated strong classification performance, particularly for BOMBAY, HOROZ and SEKER. 
 Some confusion was observed between DERMASON and SIRA.
 
+4. Gaussian Naive Bayes
 
+Achieved 76.30% accuracy and 96.44% AUC.
+Classified the BOMBAY class perfectly.
+Demonstrated good performance for DERMASON.
+Had difficulty distinguishing between BARBUNYA and CALI, and between DERMASON and SEKER.
+
+5. Support Vector Machine (SVM)
+
+Achieved 92.10% accuracy and 99.33% AUC.
+Demonstrated strong overall classification performance.
+Classified the BOMBAY class perfectly.
+Some confusion was observed between DERMASON and SIRA.
 
 
