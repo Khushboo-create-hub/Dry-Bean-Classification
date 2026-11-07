@@ -413,9 +413,9 @@ if uploaded_file is not None:
         ax.set_xlabel("Predicted Class", fontsize=10)
         ax.set_ylabel("Actual Class", fontsize=10)
         ax.set_title(
-        f"Confusion Matrix - {selected_model_name}",
-        fontsize=13
-    )
+            f"Confusion Matrix - {selected_model_name}",
+            fontsize=13
+        )
 
     plt.xticks(rotation=45, fontsize=8)
     plt.yticks(rotation=0, fontsize=8)
