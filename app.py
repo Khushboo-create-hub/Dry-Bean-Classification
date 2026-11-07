@@ -28,6 +28,34 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+<style>
+html, body, [class*="css"] {
+    font-size: 14px !important;
+}
+
+h1 {
+    font-size: 26px !important;
+}
+h2 {
+    font-size: 22px !important;
+}
+h3 {
+    font-size: 18px !important;
+}
+
+[data-testid="stMetricValue"] {
+    font-size: 25px !important;
+}
+
+[data-testid="stMetricLabel"] {
+    font-size: 13px !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+
+
 st.title("🌱 Dry Bean Classification Application")
 
 st.write(
@@ -371,29 +399,31 @@ if uploaded_file is not None:
 
     fig, ax = plt.subplots(figsize=(10, 7))
 
-    sns.heatmap(
-        cm,
-        annot=True,
-        fmt="d",
-        cmap="Blues",
-        xticklabels=label_encoder.classes_,
-        yticklabels=label_encoder.classes_,
-        ax=ax
-    )
+sns.heatmap(
+    cm,
+    annot=True,
+    fmt="d",
+    cmap="Blues",
+    annot_kws={"size": 9},
+    xticklabels=label_encoder.classes_,
+    yticklabels=label_encoder.classes_,
+    ax=ax
+)
 
-    ax.set_xlabel("Predicted Class")
-    ax.set_ylabel("Actual Class")
-    ax.set_title(
-        f"Confusion Matrix - {selected_model_name}"
-    )
+ax.set_xlabel("Predicted Class", fontsize=10)
+ax.set_ylabel("Actual Class", fontsize=10)
+ax.set_title(
+    f"Confusion Matrix - {selected_model_name}",
+    fontsize=13
+)
 
-    plt.xticks(rotation=45)
-    plt.yticks(rotation=0)
-    plt.tight_layout()
+plt.xticks(rotation=45, fontsize=8)
+plt.yticks(rotation=0, fontsize=8)
+plt.tight_layout()
 
-    st.pyplot(fig)
+st.pyplot(fig, use_container_width=False)
 
-    plt.close(fig)
+plt.close(fig)
 
     # --------------------------------------------------
     # 13. CLASSIFICATION REPORT
